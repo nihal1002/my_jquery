@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" style="background-color: cyan; border: 3px double darkblue; border-radius: 2px;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, maxime.
+    <p>this a paragraph in div </p>
+    <p>this is a another paragraph in div </p>
+    </div>
+    <!-- <ol>
+        <li>itm 1</li>
+        <li>itm 2</li>
+        <li>itm 3</li>
+        <li>itm 4</li>
+    </ol> -->
+    <!-- <button id="btn1">text</button> -->
+    <button id="btn2">click</button>
+    
+
+
+    <script src="jQuery File/jquery-3.6.1.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            //append
+            $("#btn2").click(function(){
+            //     $("p").append("<b>Append Text</b>");
+            // })
+            // $("#btn2").click(function(){
+            //     $("ol").append("<li>Append itm</li>");
+            // })
+            //prepend
+            // $("#btn1").click(function(){
+            //     $("p").prepend("<b> Append Text </b>");
+            // })
+            // $("#btn2").click(function(){
+            //     $("ol").prepend("<li>Append itm</li>");
+            // })
+            // $("p").after("<b><h2>hello mofos</h2></b>");
+
+            // $("#btn2").click(function(){
+            //     $("p").before("<p>hello world</p>");
+            // })
+            $("#div1").empty();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aut.</p>
+    <button>hide</button>
+    <script src="jQuery File/jquery-3.6.1.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            //with callback
+            // $("button").click(function(){
+            //     $("p").hide(function(){
+            //         alert("para is now hidden");
+            //     });
+            // })
+
+                //without callback
+            $("button").click(function(){
+                $("p").hide(2000);
+                    alert("para is now hidden");
+            })
+        })
+    </script>
+</body>
+</html>

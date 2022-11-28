@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Caveat', cursive;
+        }
+        #vp{
+            max-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        #main-title1{
+            width: 100vw;
+            height: 60vh;
+            background: url(dcmi/lakecity.jpg) center / cover no-repeat rgb(152, 33, 33);
+            background-blend-mode: multiply;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            width: 100vw;
+            margin-top: 55vh;
+            padding: 2rem;
+            font-size: 20vh;
+            color: whitesmoke;
+            text-align: center;
+        }
+        #main-title2{
+            width: 100vw;
+            height: 60vh;
+            background: url(dcmi/lakecity.jpg) center / cover;
+            background-repeat: no-repeat;
+        }
+        #gradient-text{
+            background: -webkit-linear-gradient(90deg,darkred, rgb(5, 10, 200));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 0.5rem;
+        }
+        .col{
+            padding: 0.2rem;
+            width: 24vw;
+        }
+        p{
+            padding: 0.1rem;
+        }
+        ul{
+            margin-top: -1.5rem;
+            margin-right: 2rem;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+        #nav-logo{
+            border: 3px solid red;
+            border-radius: 50%;
+            width: 2rem;
+            background-color: rgb(247, 244, 40);
+            color: rgb(43, 43, 137);
+            margin-left: 2rem;
+            margin-top: 1rem;
+            text-align: center;
+            padding-right: 0.3rem;
+        }
+        #nav-bar{
+            background-color: black;
+            color: red;
+            border: 3px solid red;
+        }
+        a{
+            padding: 0.3rem;
+            /* border: 3px solid rgb(21, 21, 78); */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section id="vp">
+        <section id="Header">
+            <nav id="nav-bar">
+                <div id="nav-logo"><a>N</a></div>
+                    <ul id="nav-list">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">profile</a></li>
+                    </ul>
+            </nav>
+                <main id="main-title1">
+                    <h1 id="gradient-text">the red day</h1>
+                </main>
+                <main id="main-title2">
+                </main>
+        </section>
+        <section id="Body">
+            <div id="container">
+                <div class="row">
+                    <div class="card my-2 col"><img src="https://picsum.photos/250/300" alt="random-pic">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minus consequatur rem inventore quasi possimus adipisci, iusto rerum, impedit autem, assumenda itaque quod ea doloremque fugiat facere. Nihil, eveniet perferendis!</p>
+                    </div>
+                    <div class="card col"><img src="https://picsum.photos/250/300" alt="random-pic">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minus consequatur rem inventore quasi possimus adipisci, iusto rerum, impedit autem, assumenda itaque quod ea doloremque fugiat facere. Nihil, eveniet perferendis!</p>
+                    </div>
+                    <div class="card col"><img src="https://picsum.photos/250/300" alt="random-pic">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minus consequatur rem inventore quasi possimus adipisci, iusto rerum, impedit autem, assumenda itaque quod ea doloremque fugiat facere. Nihil, eveniet perferendis!</p>
+                    </div>
+                    <div class="card col"><img src="https://picsum.photos/250/300" alt="random-pic">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minus consequatur rem inventore quasi possimus adipisci, iusto rerum, impedit autem, assumenda itaque quod ea doloremque fugiat facere. Nihil, eveniet perferendis!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Footer">
+            <div class="wrapper">
+            </div>
+        </section>
+    </section>
+</body>
+</html>

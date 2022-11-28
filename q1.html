@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="main">
+        <h1>jQuery implementation by downloading jquery file</h1>
+    </div>
+
+    <script src="jquery file/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function (){
+            alert('jquery is successfully implemented');
+            $('h1').css('color', 'red');
+            $('div h1').css({'background-color':'cyan', 'color':'darkblue', 'padding': '0.3rem'})
+        })
+        $('#main').css({'border':'5px double green', 'border-radius': '1rem', 'padding':'0.5rem', 'background-color':'lightpink'
+        })
+    </script>
+</body>
+</html>

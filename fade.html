@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 10rem;
+            height: 10rem;
+            background-color: red;
+            display: none;
+        }
+        #div2{
+            width: 10rem;
+            height: 10rem;
+            background-color: blue;
+            display: none;
+        }
+        #div3{
+            width: 10rem;
+            height: 10rem;
+            background-color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa dolor ex quidem tenetur consectetur, saepe voluptas, odio consequuntur mollitia ullam quaerat eius nulla. Tenetur, dolores exercitationem? Minima, facilis ipsam.</p>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <button id="btn1"> fade In</button>
+    <button id="btn2"> fade Out</button>
+    <button id="btn3"> fade Toggle</button>
+    <button id="btn4"> fade Toggle</button>
+
+    <script src="jQuery File/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btn1").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            })
+            $("#btn2").click(function(){
+                $("#div1").fadeOut(3000);
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut();
+            })
+            $("#btn3").click(function(){
+                $("#div1").fadeToggle(3000);
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle();
+            })
+            $("#btn4").click(function(){
+                $("#div1").fadeTo(3000,0.2);
+                $("#div2").fadeTo("slow", 0.5);
+                $("#div3").fadeTo();
+            })
+        })
+    </script>
+</body>
+</html>

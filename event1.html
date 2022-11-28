@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>click here</div>
+    <div class="hi"> to iterate </div>
+    <div>through these divs</div>
+    <p class="hi">i am para</p>
+    <script src="jQuery File/jquery-3.6.1.js"></script>
+    <script>
+        $(document).click(function(){
+            $('.hi').each(function(i){
+                if(this.style.color!=='red'){
+                    this.style.color = 'red';
+                }
+                else{
+                    this.style.color = 'green';
+                }
+            })
+        })
+    </script>
+</body>
+</html>

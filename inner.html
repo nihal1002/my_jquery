@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv{
+            height: 20rem;
+            width: 30rem;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid red;
+            background-color: lightskyblue;
+        }
+        p{
+            height: 10%;
+            width: 100%;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demo: jquery height() method</h1>
+    <button id="btnDivHeight">get div height</button>
+    <!-- <button id="btnPHeight">get p height</button> -->
+    <div id="myDiv">this is div</div>
+    <!-- <p>this is paragraph</p> -->
+    
+
+    <script src="jQuery File/jquery-3.6.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#btnDivHeight').click(function(){
+                var txt = "";
+                txt += "width of div:" + $('#myDiv').width() + "</br>";
+                txt += "height of div:" + $('#myDiv').height() + "</br>";
+
+                $("#myDiv").html(txt);
+            //     alert($('#myDiv').height()); //returns 100
+            });
+            // $('#btnPHeight').click(function(){
+            //     alert($('p').height()); //returns height in px
+            // });
+            // //set height
+            // $('#myDiv').height(100);
+
+
+        })
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            width: 90%;
+            height: auto;
+            border: 3px solid darkred;
+            padding: 1rem;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <p class="para1 para2" name="nihal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, qui nesciunt. Id aperiam rem doloremque labore repellat culpa quam repellendus provident nam sequi eaque, blanditiis quas accusantium illum sunt expedita dignissimos beatae corporis molestiae? Ab quidem nemo laborum nostrum reprehenderit omnis animi totam odit mollitia, soluta quod rerum sint reiciendis doloribus ipsam quos maxime enim quam, et perferendis sunt minima alias quia! Repellendus delectus et quaerat iure? Magnam, officia veritatis.
+            </p>
+        </div>
+    </section>
+    <script src="jQuery File/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // let a = $('div').html();
+            // let a = $('div').html('<h1>hiii!!!!!</h1>');
+            // let a = $('div').html('hiii');
+            // console.log(a);
+
+            // let a =$('div').text(<b>heyyyy</b>);
+            // a = $('div').text();
+            // console.log(a);
+
+            a = $('div p').attr('class');
+            a = $('div p').attr('class', 'para para1');
+            // // dont write .(dot)
+
+            a = $('div').attr('id', 'para');
+        })
+    </script>
+</body>
+</html>
